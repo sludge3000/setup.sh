@@ -15,17 +15,13 @@ git clone https://github.com/AlessandroYorba/Alduin
 git clone https://github.com/junegunn/seoul256.vim
 git clone https://github.com/nanotech/jellybeans.vim
 
-# Check if already in $HOME and move stuff
-DIRECTORY=$(cd `dirname $0` && pwd)
-if [ $DIRECTORY != $HOME ];
-        then
-        # Copy dot-files to HOME_DIR
-        cp dot-files/.vimrc ~/.vimrc
-        cp dot-files/.tmux.conf ~/.tmux.conf
-        cp dot-files/.bashrc ~/.bashrc
-        cp dot-files/.bash_aliases ~/.bash_aliases
-        cp -r dot-files/.git ~/.git
-fi
+# Copy dot-files to HOME_DIR
+cp dot-files/.vimrc ~/.vimrc
+cp dot-files/.tmux.conf ~/.tmux.conf
+cp dot-files/.bashrc ~/.bashrc
+cp dot-files/.bash_aliases ~/.bash_aliases
+cp dot-files/.profile ~/.profile
+cp -r dot-files/.git ~/.git
 
 # Copy VIM color schemes to correct location
 cp Alduin/colors/alduin.vim ~/.vim/colors/alduin.vim
