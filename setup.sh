@@ -25,11 +25,11 @@ cp -r dot-files/.git ~/.git
 
 # Copy VIM color schemes to correct location
 cp Alduin/colors/alduin.vim ~/.vim/colors/alduin.vim
-cp seoul256/colors/seoul256.cim ~/.vim/colors/seoul256.vim
-cp jellybeans/colors/jellybeans.vim ~/.vim/colors/jellybeans.vim
+cp seoul256.vim/colors/seoul256.vim ~/.vim/colors/seoul256.vim
+cp jellybeans.vim/colors/jellybeans.vim ~/.vim/colors/jellybeans.vim
 
 # Tidy up
-rm -r dot-files
-rm -r Alduin
-rm -r seoul256
-rm -r jellybeans
+rm -rf dot-files
+rm -rf Alduin
+rm -rf seoul256.vim
+rm -rf jellybeans.vim
