@@ -25,7 +25,7 @@ cp dot-files/.tmux.conf ~/.tmux.conf
 cp dot-files/.bashrc ~/.bashrc
 cp dot-files/.bash_aliases ~/.bash_aliases
 cp dot-files/.profile ~/.profile
-cp -r dot-files/.vim ~/.vim
+cp dot-files/.vim/ftplugin/python.vim ~/.vim/ftplugin/python.vim
 
 # Copy VIM color schemes to correct location
 cp Alduin/colors/alduin.vim ~/.vim/colors/alduin.vim
