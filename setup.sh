@@ -9,6 +9,10 @@ if [ ! -d ~/.vim/colors ];
         then mkdir ~/.vim/colors;
 fi
 
+if [ ! -d ~/.vim/ftplugin ];
+        then mkdir ~/.vim/ftplugin;
+fi
+
 # GIT clone stuff
 git clone https://github.com/sludge3000/dot-files
 git clone https://github.com/AlessandroYorba/Alduin
@@ -21,6 +25,7 @@ cp dot-files/.tmux.conf ~/.tmux.conf
 cp dot-files/.bashrc ~/.bashrc
 cp dot-files/.bash_aliases ~/.bash_aliases
 cp dot-files/.profile ~/.profile
+cp -r dot-files/.vim ~/.vim
 
 # Copy VIM color schemes to correct location
 cp Alduin/colors/alduin.vim ~/.vim/colors/alduin.vim
