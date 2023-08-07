@@ -7,7 +7,7 @@
 #
 apt -y -q update
 apt -y -q upgrade
-apt -y -q install vim tmux tcpdump fortune-mod cowsay lolcat wireshark pipenv python3-scapy
+apt -y -q install vim tmux tcpdump fortune-mod cowsay lolcat wireshark python3-scapy
 
 #
 #
@@ -25,3 +25,8 @@ chmod +x,u+x /home/motoko/.python39_netraw
 /usr/bin/chgrp pcap /usr/bin/tcpdump
 /usr/bin/chmod 750 /usr/bin/tcpdump
 /sbin/setcap cap_net_raw,cap_net_admin=eip /usr/bin/tcpdump
+
+#
+#
+# For Poetry
+curl -sSL https://install.python-poetry.org | python3 -
