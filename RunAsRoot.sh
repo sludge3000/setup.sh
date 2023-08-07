@@ -7,7 +7,7 @@
 #
 apt -y -q update
 apt -y -q upgrade
-apt -y -q install vim tmux tcpdump fortune-mod cowsay lolcat wireshark python3-scapy
+apt -y -q install vim tmux tcpdump fortune-mod cowsay lolcat wireshark python3-scapy curl
 
 #
 #
